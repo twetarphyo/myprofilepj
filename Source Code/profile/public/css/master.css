@@ -1,0 +1,28 @@
+.main-color{
+  color: #F3F3F3;
+}
+.main-bg-color{
+  background-color: #006064;
+}
+.height-80{
+  height:80px;
+}
+.height-50{
+  height: 50px;
+}
+.margin-top-20{
+  margin-top: 20px;
+}
+.btn-main{
+  background-color: #F3F3F3;
+}
+.black{
+  color:#333;
+}
+.margin-left-20{
+  margin-left: 20px;
+}
+a:hover{
+  color:white;
+  background-color: grey;
+}
