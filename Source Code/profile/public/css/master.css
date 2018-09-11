@@ -1,3 +1,5 @@
+@media (min-width: 33em) {
+
 .main-color{
   color: #F3F3F3;
 }
@@ -19,10 +21,87 @@
 .black{
   color:#333;
 }
+ul{
+  list-style-type: none;
+}
 .margin-left-20{
   margin-left: 20px;
 }
-a:hover{
+
+.a:hover{
   color:white;
   background-color: grey;
+  /* text-shadow: 2px 2px 1px #222; */
+  box-shadow: 3px 3px 4px #222;
+  border-radius: 8px;
+}
+.link{
+  text-shadow: 2px 2px 1px #222;
+
+}
+.link:hover{
+  text-shadow: 6px 6px 3px #222;
+  cursor: pointer;
+}
+.git:hover {
+  color: white;
+
+}
+}
+
+@media (min-width: 15em) and (max-width: 60em) {
+
+  body {
+
+    width: 36em;
+  }
+
+  .main-color{
+    color: #F3F3F3;
+  }
+  .main-bg-color{
+    background-color: #006064;
+  }
+  .height-80{
+    height:80px;
+  }
+  .height-50{
+    height: 50px;
+  }
+  .margin-top-20{
+    margin-top: 20px;
+  }
+  .btn-main{
+    background-color: #F3F3F3;
+  }
+  .black{
+    color:#333;
+  }
+  ul{
+    list-style-type: none;
+  }
+  .margin-left-20{
+    margin-left: 20px;
+  }
+
+  .a:hover{
+    color:white;
+    background-color: grey;
+    /* text-shadow: 2px 2px 1px #222; */
+    box-shadow: 3px 3px 4px #222;
+    border-radius: 8px;
+  }
+  .link{
+    text-shadow: 2px 2px 1px #222;
+
+  }
+  .link:hover{
+    text-shadow: 6px 6px 3px #222;
+    cursor: pointer;
+  }
+  .git:hover {
+    color: white;
+
+  }
+
 }

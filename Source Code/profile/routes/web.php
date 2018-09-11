@@ -17,3 +17,15 @@ Route::get('/', function () {
 Route::get('/admin',function () {
   return view('admin');
 });
+Route::get('/admin/edit',function () {
+  return view('edit');
+});
+Route::get('/admin/posts',function () {
+  return view('posts');
+});
+Route::get('/admin/posts/addpost',function () {
+  return view('create_post');
+});
+Route::get('/admin/posts/updatepost',function () {
+  return view('update_post');
+});
