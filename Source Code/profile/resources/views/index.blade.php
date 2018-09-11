@@ -1,19 +1,20 @@
 @extends('layout.master')
 @section('header')
   <div class="main-bg-color main-color">
-    <div class="container container-fluit">
+    <div class="container ">
       <div class="row">
+
         <img src="image/profile.jpg" class="rounded-circle col-sm-12 col-lg-2 " height="200"    alt="">
         <div class="col-sm-12 col-lg-4 align-self-center">
-          <h1>Twetar Phyo</h1>
-          <sub>Web Developer</sub>
+          <h1 class="link">Twetar Phyo</h1>
+          <sub class="link">Web Developer</sub>
         </div>
-        <ul class="col-sm-12 col-lg-4 align-self-center">
+        <ul class="col-sm-12 col-lg-4 align-self-center link">
           <li>Live in Yangon</li>
           <li>B.C.Sc</li>
           <li>twetarphyo1@gmail.com</li>
           <li>09970585488</li>
-          <li><a href="https://www.github.com/twetarphyo" class="main-color">Github</a> </li>
+          <li><a  href="https://www.github.com/twetarphyo" class="git main-color">Github</a> </li>
         </ul>
       </div>
     </div>
