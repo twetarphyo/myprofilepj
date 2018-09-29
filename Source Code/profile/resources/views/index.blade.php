@@ -1,15 +1,15 @@
 @extends('layout.master')
 @section('header')
-  <div class="main-bg-color main-color">
+  <div class="main-bg-color main-color margin-button-120">
     <div class="container ">
       <div class="row">
 
-        <img src="image/profile.jpg" class="rounded-circle col-sm-12 col-lg-2 " height="200"    alt="">
-        <div class="col-sm-12 col-lg-4 align-self-center">
+        <img src="image/profile.jpg" class="rounded-circle margin-left-40 margin-top-20" width="200" height="200"    alt="">
+        <div class=" align-self-center margin-left-40">
           <h1 class="link">Twetar Phyo</h1>
           <sub class="link">Web Developer</sub>
         </div>
-        <ul class="col-sm-12 col-lg-4 align-self-center link">
+        <ul class="align-self-center link margin-left-40 margin-top-20">
           <li>Live in Yangon</li>
           <li>B.C.Sc</li>
           <li>twetarphyo1@gmail.com</li>
@@ -21,71 +21,17 @@
   </div>
 @endsection
 @section('content')
-  <div class="padding-top-20">
-    <div class="container margin-top-20">
+  <div class="padding-top-20 margin-50">
+    @foreach($post as $p)
+    <div class=" margin-top-20">
       <div class="card">
         <div class="card-body">
-          <h2 class="card-title">Title</h2>
-          <p class="card-text">adfasdfj;asjdf;ksadjf;kasdflahsdlfjhasdlfsaldfjhasldfjasfjwaoefj;asdkfj;sadkfj</p>
+          <h2 class="card-title">{{$p->title}}</h2>
+          <p class="card-text">{{$p->content}}</p>
         </div>
       </div>
     </div>
-    <div class="container margin-top-20">
-      <div class="card">
-        <div class="card-body">
-          <h2 class="card-title">Title</h2>
-          <p class="card-text">adfasdfj;asjdf;ksadjf;kasdflahsdlfjhasdlfsaldfjhasldfjasfjwaoefj;asdkfj;sadkfj</p>
-        </div>
-      </div>
-    </div>
-    <div class="container margin-top-20">
-      <div class="card">
-        <div class="card-body">
-          <h2 class="card-title">Title</h2>
-          <p class="card-text">adfasdfj;asjdf;ksadjf;kasdflahsdlfjhasdlfsaldfjhasldfjasfjwaoefj;asdkfj;sadkfj</p>
-        </div>
-      </div>
-    </div>
-    <div class="container margin-top-20">
-      <div class="card">
-        <div class="card-body">
-          <h2 class="card-title">Title</h2>
-          <p class="card-text">adfasdfj;asjdf;ksadjf;kasdflahsdlfjhasdlfsaldfjhasldfjasfjwaoefj;asdkfj;sadkfj</p>
-        </div>
-      </div>
-    </div>
-    <div class="container margin-top-20">
-      <div class="card">
-        <div class="card-body">
-          <h2 class="card-title">Title</h2>
-          <p class="card-text">adfasdfj;asjdf;ksadjf;kasdflahsdlfjhasdlfsaldfjhasldfjasfjwaoefj;asdkfj;sadkfj</p>
-        </div>
-      </div>
-    </div>
-    <div class="container margin-top-20">
-      <div class="card">
-        <div class="card-body">
-          <h2 class="card-title">Title</h2>
-          <p class="card-text">adfasdfj;asjdf;ksadjf;kasdflahsdlfjhasdlfsaldfjhasldfjasfjwaoefj;asdkfj;sadkfj</p>
-        </div>
-      </div>
-    </div>
-    <div class="container margin-top-20">
-      <div class="card">
-        <div class="card-body">
-          <h2 class="card-title">Title</h2>
-          <p class="card-text">adfasdfj;asjdf;ksadjf;kasdflahsdlfjhasdlfsaldfjhasldfjasfjwaoefj;asdkfj;sadkfj</p>
-        </div>
-      </div>
-    </div>
-    <div class="container margin-top-20">
-      <div class="card">
-        <div class="card-body">
-          <h2 class="card-title">Title</h2>
-          <p class="card-text">adfasdfj;asjdf;ksadjf;kasdflahsdlfjhasdlfsaldfjhasldfjasfjwaoefj;asdkfj;sadkfj</p>
-        </div>
-      </div>
-    </div>
+    @endforeach
   </div>
 @endsection
 @section('footer')
