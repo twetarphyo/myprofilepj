@@ -10,7 +10,15 @@
         @else
         <a href="{{route('admin_info')}}" class="a col-sm-2 col-xs-2 btn btn-main black margin-left-20">Home</a>
         @endif
-        <a href="#" class="a col-sm-2 col-xs-2 btn btn-main black margin-left-20">Logout</a>
+        <!-- <a href="{{ route('logout') }}" class="a col-sm-2 col-xs-2 btn btn-main black margin-left-20" >Logout</a> -->
+        <a class="a col-sm-2 col-xs-2 btn btn-main black margin-left-20" href="{{ route('logout') }}"
+           onclick="event.preventDefault();
+                         document.getElementById('logout-form').submit();">
+            {{ __('Logout') }}
+        </a>
+        <form id="logout-form"  action="{{ route('logout') }}" method="POST" style="display: none;">
+            @csrf
+        </form>
       </div>
     </div>
   </div>

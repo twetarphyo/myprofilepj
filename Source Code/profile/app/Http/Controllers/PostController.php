@@ -19,10 +19,11 @@ class PostController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-    //  public function __construct() {
-    //
-    //     $this->middleware('auth')->except(['create','posts','update']);
-    // }
+     public function __construct() {
+
+        $this->middleware('auth')->except(['create','posts','update']);
+    }
+
     public function view()
     {
       $post=Post::all();

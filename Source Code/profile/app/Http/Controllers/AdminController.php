@@ -15,6 +15,17 @@ class AdminController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+     public function __construct() {
+
+        $this->middleware('auth')->except(['admin','edit']);
+    }
+
+     public function view()
+     {
+      $admin=Admin::all();
+      return view('index', compact('admin'));
+     }
+
     public function index()
     {
       $showProjects="true";

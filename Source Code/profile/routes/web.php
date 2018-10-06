@@ -11,7 +11,8 @@
 |
 */
 
-Route::get('/', 'PostController@view')->name('user_view');
+
+Route::get('/', 'IndexController@index')->name('user_view');
 
 
 Route::get('/admin', 'AdminController@index')->name('admin_info');
@@ -47,3 +48,7 @@ Route::post('/admin/posts/updatepost/{post}', 'PostController@update');
 Route::delete('/admin/posts/delete/{post}', 'PostController@delete')->name('delete');
 
 Route::get('/login', 'SessionsController@create');
+
+  Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

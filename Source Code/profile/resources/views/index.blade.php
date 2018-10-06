@@ -5,17 +5,19 @@
       <div class="row">
 
         <img src="image/profile.jpg" class="rounded-circle margin-left-40 margin-top-20" width="200" height="200"    alt="">
+        @foreach($admin as $adm)
         <div class=" align-self-center margin-left-40">
-          <h1 class="link">Twetar Phyo</h1>
+          <h1 class="link">{{$adm->name}}</h1>
           <sub class="link">Web Developer</sub>
         </div>
         <ul class="align-self-center link margin-left-40 margin-top-20">
-          <li>Live in Yangon</li>
-          <li>B.C.Sc</li>
-          <li>twetarphyo1@gmail.com</li>
-          <li>09970585488</li>
-          <li><a  href="https://www.github.com/twetarphyo" class="git main-color">Github</a> </li>
+          <li>Live in {{$adm->address}} </li>
+          <li>{{$adm->bachelor}}</li>
+          <li>{{$adm->email}}</li>
+          <li>{{$adm->phone}}</li>
+          <li><a  href="https://www.github.com/{{$adm->git_link}}" class="git main-color">{{$adm->git_link}}</a> </li>
         </ul>
+        @endforeach
       </div>
     </div>
   </div>
