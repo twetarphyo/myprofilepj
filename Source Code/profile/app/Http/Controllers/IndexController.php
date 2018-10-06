@@ -17,6 +17,7 @@ class IndexController extends Controller
      */
     public function index()
     {
+      twetar
       $post=Post::all();
       $admin=Admin::all();
       return  view('index',compact('post','admin'));
